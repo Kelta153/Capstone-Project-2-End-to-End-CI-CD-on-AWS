@@ -5,7 +5,7 @@
   "containerDefinitions": [
     {
       "name": "myapp-container",
-      "image": "IMAGE1_NAME",
+      "image": "<IMAGE1_NAME>",
       "essential": true,
       "portMappings": [
         {
