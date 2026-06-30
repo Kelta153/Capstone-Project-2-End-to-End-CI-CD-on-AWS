@@ -1,0 +1,28 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "AWS CI/CD Capstone Project",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "test": "jest --runInBand"
+  },
+  "keywords": [
+    "aws",
+    "cicd",
+    "ecs",
+    "docker",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "Description": "AWS CI/CD Capstone Project",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2",
+    "supertest": "^7.2.2"
+  }
+}
