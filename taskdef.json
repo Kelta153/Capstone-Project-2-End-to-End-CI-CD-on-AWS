@@ -1,0 +1,31 @@
+{
+  "family": "myapp-task",
+  "networkMode": "awsvpc",
+  "executionRoleArn": "arn:aws:iam::004078028366:role/capstone-ecs-stack-ECSTaskExecutionRole-1ORVgUgrzGIb",
+  "containerDefinitions": [
+    {
+      "name": "myapp-container",
+      "image": "IMAGE1_NAME",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": 3000,
+          "protocol": "tcp"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/myapp-task",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs",
+          "awslogs-create-group": "true"
+        }
+      }
+    }
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "512",
+  "memory": "1024"
+}
