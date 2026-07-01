@@ -83,9 +83,9 @@ app.get("/", (req, res) => {
 
 // Health check route
 app.get("/health", (req, res) => {
-  res.status(500).json({
-    status: "ERROR",
-    message: "Forced failure to trigger CloudWatch Alarm and SNS Email",
+  res.status(200).json({
+    status: "OK",
+    message: "Application is healthy",
   });
 });
 
