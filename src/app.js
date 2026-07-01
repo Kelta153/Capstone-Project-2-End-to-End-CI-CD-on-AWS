@@ -55,7 +55,7 @@ app.get("/", (req, res) => {
 
     <body>
       <div class="card">
-        <h1>AWS CI/CD Capstone Project</h1>
+        <h1>AWS CI/CD Capstone Project-V2</h1>
 
         <p><strong>Application Started:</strong> ${startTime}</p>
 
@@ -64,10 +64,12 @@ app.get("/", (req, res) => {
         <ul>
           <li>GitHub ✓</li>
           <li>CodePipeline ✓</li>
+          <li>CodePipeline-manual-approval ✓</li>
           <li>CodeBuild ✓</li>
           <li>Amazon ECR ✓</li>
           <li>Amazon ECS (Fargate) ✓</li>
           <li>Application Load Balancer ✓</li>
+          <li>SNS & CloudWatch Configuration ✓</li>
         </ul>
 
         <p class="success">
