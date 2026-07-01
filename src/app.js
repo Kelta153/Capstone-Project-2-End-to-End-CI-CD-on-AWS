@@ -55,7 +55,7 @@ app.get("/", (req, res) => {
 
     <body>
       <div class="card">
-        <h1>AWS CI/CD Capstone Project-V2</h1>
+        <h1>AWS CI/CD Capstone Project-V3</h1>
 
         <p><strong>Application Started:</strong> ${startTime}</p>
 
