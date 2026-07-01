@@ -1,3 +1,5 @@
+const express = require("express");
+
 const startTime = new Date().toISOString();
 
 const app = express();
@@ -81,9 +83,9 @@ app.get("/", (req, res) => {
 
 // Health check route
 app.get("/health", (req, res) => {
-  res.status(200).json({
-    status: "OK",
-    message: "Application is healthy",
+  res.status(500).json({
+    status: "ERROR",
+    message: "Forced failure to trigger CloudWatch Alarm and SNS Email",
   });
 });
 
