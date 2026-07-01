@@ -1,5 +1,3 @@
-const express = require("express");
-
 const startTime = new Date().toISOString();
 
 const app = express();
